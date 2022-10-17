@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #f9f2ed;
+}
+
+* {
+    font-family: 'Inter', system-ui !important;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    width: 800px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+
+
+
