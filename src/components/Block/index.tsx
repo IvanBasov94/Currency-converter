@@ -8,8 +8,8 @@ type BlockProps = {
    value: number,
    currency: string,
    onChangeValue: Function,
-   onChangeCurrency: Function,
-}
+   onChangeCurrency: (cur: string) => void,
+};
 
 const Block: React.FC<BlockProps> = ({ value, currency, onChangeValue, onChangeCurrency }) => {
 
@@ -33,7 +33,7 @@ const Block: React.FC<BlockProps> = ({ value, currency, onChangeValue, onChangeC
             </li>
          </ul>
          <input
-            onChange={(e) => onChangeValue(e.target.value)}
+            onChange={(event) => onChangeValue(event.target.value)}
             value={value}
             type="number"
             placeholder={'0'}

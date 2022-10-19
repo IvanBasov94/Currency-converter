@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Block from './components/Block';
-import './index.scss';
+
 
 const App = () => {
 
@@ -41,7 +41,7 @@ const App = () => {
 
    const onChangeToPrice = (value: number) => {
       const result = (ratesRef.current[fromCurrency] /
-            ratesRef.current[toCurrency]) * value;
+         ratesRef.current[toCurrency]) * value;
       setFromPrice(Math.trunc(result));
       setToPrice(value);
    };
