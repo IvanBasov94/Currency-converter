@@ -18,7 +18,8 @@ The application can perform currency conversion.
 The project is made in version React 18.2.0.
 
 Clone the repository and run the following:
-* npm install;
-* npm start;
+* npm `install`
+* npm `start`
+* navigate to `http://localhost:3000/`
 
 
